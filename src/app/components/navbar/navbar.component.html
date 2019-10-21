@@ -1,0 +1,21 @@
+<nav class="blue-grey darken-4">
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Movie search</a>
+        <ul class="right hide-on-med-and-down">
+            <li routerLinkActive="active"><a [routerLink]="['inicio']">Inicio</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['buscar']">Buscar </a></li>
+            <!-- Search -->
+            <li>
+                <form (ngSubmit)="buscarPelicula(buscar.value)">
+                    <div class="input-field">
+                        <input #buscar type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+
+                    </div>
+
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
