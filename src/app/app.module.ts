@@ -18,6 +18,7 @@ import { BuscarComponent } from './components/buscar/buscar.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { GaleriaComponent } from './components/home/galeria.component';
+import { FavoritosComponent } from './components/favoritos/favoritos.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { GaleriaComponent } from './components/home/galeria.component';
     PageNotFoundComponent,
     FooterComponent,
     PeliculaImagenPipe,
-    GaleriaComponent
+    GaleriaComponent,
+    FavoritosComponent
   ],
   imports: [
     BrowserModule,

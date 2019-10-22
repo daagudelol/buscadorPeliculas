@@ -1,0 +1,25 @@
+<h4>Faroritos</h4>
+<div class="row">
+
+
+
+
+    <div class="col s3" *ngFor="let pelicula of getFavoritos()">
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img [src]="pelicula | peliculaImagen">
+
+                <i *ngIf="!isFavorito(pelicula)" class="material-icons right" (click)="clickPelicula(pelicula)">star_border</i>
+                <i *ngIf="isFavorito(pelicula)" class="material-icons right" (click)="clickPelicula(pelicula)">star</i>
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{pelicula.title}}<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">Ver más</a></p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{pelicula.title}}<i class="material-icons right">close</i></span>
+                <p>{{pelicula.overview | slice:0:350}}...</p>
+            </div>
+        </div>
+    </div>
+</div>
