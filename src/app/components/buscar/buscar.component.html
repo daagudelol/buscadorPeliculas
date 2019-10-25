@@ -41,8 +41,8 @@
             <h4>Faroritos</h4>
             <div class="card-panel grey lighten-5 z-depth-1" *ngFor="let pelicula of getFavoritos()">
                 <div class="row valign-wrapper">
-                    <div class="col s4">
-                        <img [src]="pelicula | peliculaImagen" alt="" class="circle responsive-img">
+                    <div class="col s4" style="height: 77px">
+                        <img [src]="pelicula | peliculaImagen" alt="" class="circle responsive-img" style="height: 100%">
                     </div>
                     <div class="col s8">
                         <span class="black-text">
