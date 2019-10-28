@@ -1,3 +1,21 @@
-<div class="container main-container">
+<div *ngIf="pelicula" class="container main-container animated fadeIn fast">
+    <h1>{{pelicula.title}}</h1>
+    <div class="row">
+        <div class="col s5 ">
+            <div class="card-image">
+                <img class="responsive-img" [src]="pelicula | peliculaImagen:true" [alt]="pelicula.title">
+            </div>
+        </div>
+        <div class="col s7">
+            <h4>Sinopsis</h4>
+            <p>{{pelicula.overview}}</p>
+            <p><strong>Fecha de lanzamiento: </strong>{{pelicula.release_date | date}}</p>
+            <p><strong>Personas que la han visto: </strong> <span class="teal lighten-2 white" style="padding: 1px">{{pelicula.popularity }}</span><br> <strong>Votación: </strong> <span class="blue-text text-darken-2">{{pelicula.vote_average }}</span></p>
+
+            <button [routerLink]="['/'+regresar]" class="btn waves-effect waves-light" type="button">Regresar
+                <i class="material-icons right">keyboard_return</i>
+              </button>
+        </div>
+    </div>
 
 </div>

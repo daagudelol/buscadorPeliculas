@@ -9,7 +9,7 @@ import { PeliculaComponent } from './components/pelicula/pelicula.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'inicio', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'buscar', component: BuscarComponent},
   {path: 'favoritos', component: FavoritosComponent},
   {path: 'buscar/:texto', component: BuscarComponent},

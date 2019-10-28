@@ -6,7 +6,7 @@
 
     <div class="col s6">
         <div class="row mb-0 mt-0 card">
-            <div class="col s12 card-image pic-1" [ngStyle]="{'background-image': 'url('+ (peliculas[0]| peliculaImagen) +')'}">
+            <div class="col s12 card-image pointer pic-1" [routerLink]="['/pelicula', peliculas[0].id,'home']" [ngStyle]="{'background-image': 'url('+ (peliculas[0]| peliculaImagen) +')'}">
                 <i class="material-icons right activator white-text pointer mt-1">more_vert</i>
                 <span class="card-title">{{peliculas[0].title}}</span>
             </div>
@@ -16,10 +16,10 @@
             </div>
         </div>
         <div class=" row mb-0 mt-0 card">
-            <div class="col s6 pic-2 card-image " [ngStyle]="{ 'background-image': 'url('+ (peliculas[1]| peliculaImagen) + ')'} ">
+            <div class="col s6 pic-2 card-image pointer " [routerLink]="['/pelicula', peliculas[1].id,'home']" [ngStyle]="{ 'background-image': 'url('+ (peliculas[1]| peliculaImagen) + ')'} ">
                 <span class="card-title ">{{peliculas[1].title}}</span>
             </div>
-            <div class="col s6 pic-2 card-image " [ngStyle]="{ 'background-image': 'url('+ (peliculas[2]| peliculaImagen) + ')'} ">
+            <div class="col s6 pic-2 card-image pointer " [routerLink]="['/pelicula', peliculas[2].id,'home']" [ngStyle]="{ 'background-image': 'url('+ (peliculas[2]| peliculaImagen) + ')'} ">
                 <span class="card-title ">{{peliculas[2].title}}</span>
             </div>
         </div>
@@ -27,15 +27,15 @@
     </div>
     <div class="col s6 ">
         <div class=" row mb-0 mt-0 card ">
-            <div class="col s6 pic-2 card-image " [ngStyle]="{ 'background-image': 'url('+ (peliculas[3]| peliculaImagen) + ')'} ">
+            <div class="col s6 pic-2 card-image pointer " [routerLink]="['/pelicula', peliculas[3].id,'home']" [ngStyle]="{ 'background-image': 'url('+ (peliculas[3]| peliculaImagen) + ')'} ">
                 <span class="card-title ">{{peliculas[3].title}}</span>
             </div>
-            <div class="col s6 pic-2 card-image " [ngStyle]="{ 'background-image': 'url('+ (peliculas[4]| peliculaImagen) + ')'} ">
+            <div class="col s6 pic-2 card-image pointer " [routerLink]="['/pelicula', peliculas[4].id,'home']" [ngStyle]="{ 'background-image': 'url('+ (peliculas[4]| peliculaImagen) + ')'} ">
                 <span class="card-title ">{{peliculas[4].title}}</span>
             </div>
         </div>
         <div class="row mb-0 mt-0 card">
-            <div class="col s12 pic-1 card-image " [ngStyle]="{ 'background-image': 'url('+ (peliculas[5]| peliculaImagen) + ')'} ">
+            <div class="col s12 pic-1 card-image pointer " [routerLink]="['/pelicula', peliculas[5].id,'home']" [ngStyle]="{ 'background-image': 'url('+ (peliculas[5]| peliculaImagen) + ')'} ">
                 <span class="card-title ">{{peliculas[5].title}}</span>
             </div>
 
